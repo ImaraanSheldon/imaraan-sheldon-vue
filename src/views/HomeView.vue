@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <section class="row" id="landing">
+      <landingComp/>
+    </section>
+    <section class="row" id="services"></section>
+    <section class="row" id="work"></section>
+    <section class="row" id="about"></section>
+    <section class="row" id="skills"></section>
+    <section class="row" id="testimonials"></section>
+    <section class="row" id="contact"></section>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import landingComp from "@/components/landingComp.vue";
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    landingComp
+  },
+  computed:{
+    Home() {
+      return this.$store.state.Home
+    }
+  },
+  mounted(){
+    this.$store.dispatch('fetchHome')
   }
 }
 </script>
