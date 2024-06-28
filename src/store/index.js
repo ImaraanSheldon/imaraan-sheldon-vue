@@ -43,7 +43,11 @@ export default createStore({
     async fetchHome(context){
       let {Home} = await (await axios.get(portURL)).data
       context.commit("setHome", Home)
-    }
+    },
+    async fetchSections(context){
+      let {Sections} = await (await axios.get(portURL)).data
+      context.commit("setSection", Sections)
+    },
   },
   modules: {
   }

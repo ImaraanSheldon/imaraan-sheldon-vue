@@ -1,9 +1,11 @@
 <template>
-  <div class="container Content-Wrapper">
+  <div class="Content-Wrapper">
     <section class="full-height px-lg-5" id="landing">
       <landingComp/>
     </section>
-    <section class="full-height px-lg-5" id="services"></section>
+    <section class="full-height px-lg-5" id="services">
+      <ServicesComp/>
+    </section>
     <section class="full-height px-lg-5" id="work"></section>
     <section class="full-height px-lg-5" id="about"></section>
     <section class="full-height px-lg-5" id="skills"></section>
@@ -14,11 +16,13 @@
 
 <script>
 import landingComp from "@/components/landingComp.vue";
+import ServicesComp from "@/components/ServicesComp.vue";
 
 export default {
   name: 'HomeView',
   components: {
-    landingComp
+    landingComp,
+    ServicesComp
   },
   computed:{
     Home() {

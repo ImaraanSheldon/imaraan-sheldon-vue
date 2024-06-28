@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="Content-Wrapper">
     <navComp/>
     <main id="Content-Wrapper">
       <router-view/>
