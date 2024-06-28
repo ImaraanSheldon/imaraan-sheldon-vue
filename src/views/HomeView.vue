@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container Content-Wrapper">
     <section class="full-height px-lg-5" id="landing">
       <landingComp/>
     </section>

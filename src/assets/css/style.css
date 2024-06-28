@@ -35,6 +35,8 @@ p{
 .full-height{
   min-height: 100vh;
   height:100%;
+  background-color: #212020;
+  max-width: 100vw;
   display: flex;
   flex-flow:column nowrap;
   justify-content: center;
