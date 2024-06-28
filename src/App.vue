@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <navComp/>
-    <main>
+    <main id="Content-Wrapper">
       <router-view/>
     </main>
     <footerComp/>

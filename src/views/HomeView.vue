@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <section class="row" id="landing">
+    <section class="full-height px-lg-5" id="landing">
       <landingComp/>
     </section>
-    <section class="row" id="services"></section>
-    <section class="row" id="work"></section>
-    <section class="row" id="about"></section>
-    <section class="row" id="skills"></section>
-    <section class="row" id="testimonials"></section>
-    <section class="row" id="contact"></section>
+    <section class="full-height px-lg-5" id="services"></section>
+    <section class="full-height px-lg-5" id="work"></section>
+    <section class="full-height px-lg-5" id="about"></section>
+    <section class="full-height px-lg-5" id="skills"></section>
+    <section class="full-height px-lg-5" id="testimonials"></section>
+    <section class="full-height px-lg-5" id="contact"></section>
   </div>
 </template>
 

@@ -1,8 +1,9 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <router-link class="navbar-brand" to="/">
-            <img src="../assets/logo.png" alt="#">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <router-link class="navbar-brand mx-lg-auto mb-lg-4" to="/">
+            <span class="h3 fw-bold d-block d-lg-none">Imaraan Sheldon</span>
+            <img src="https://imaraansheldon.github.io/allImages/portfolio-Images/Imaraan.jpg" class="d-none d-lg-block rounded-circle" alt="#">
         </router-link>
         <button
           class="navbar-toggler"
@@ -16,27 +17,27 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
             <li class="nav-item">
               <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Features</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#work">Features</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Features</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Features</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Pricing</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Pricing</a>
+              <a class="nav-link" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
