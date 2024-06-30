@@ -9,7 +9,6 @@ export default createStore({
     Home : null,
     Services_Head : null,
     Services : null,
-    Work_Head : null,
     Work : null,
     About : null,
     Education: null,
@@ -30,9 +29,6 @@ export default createStore({
     },
     setServices(state, value){
       state.Services = value
-    },
-    setWork_Head(state, value){
-      state.Work = value
     },
     setWork(state, value){
       state.Work = value
@@ -92,12 +88,12 @@ export default createStore({
           })
       }
     },
-    async fetchWork_Head(context) {
-      // Work Head
+    async fetchWork(context) {
+      // Work
       try {
-        const { Work_Head } = await (await axios.get(portURL)).data
-        context.commit('setWork_Head', Work_Head);
-        console.log(Work_Head);
+        const { Work } = await (await axios.get(portURL)).data
+        context.commit('setWork', Work);
+        // console.log(Work);
       } catch (e) {
           Swal.fire ({
             services_Name:"Name Not Found: Error ^(--)^",
@@ -106,12 +102,40 @@ export default createStore({
           })
       }
     },
-    async fetchWork(context) {
-      // Work
+    async fetchAbout(context) {
+      // About
       try {
-        const { Work } = await (await axios.get(portURL)).data
-        context.commit('setWork', Work);
-        console.log(Work);
+        const { About } = await (await axios.get(portURL)).data
+        context.commit('setAbout', About);
+        console.log(About);
+      } catch (e) {
+          Swal.fire ({
+            services_Name:"Name Not Found: Error ^(--)^",
+            services_Description:"Description Not Found: Error ^(--)^",
+            services_Type:"Type Not Found: Error ^(--)^"
+          })
+      }
+    },
+    async fetchEducation(context) {
+      // Education
+      try {
+        const { Education } = await (await axios.get(portURL)).data
+        context.commit('setEducation', Education);
+        console.log(Education);
+      } catch (e) {
+          Swal.fire ({
+            services_Name:"Name Not Found: Error ^(--)^",
+            services_Description:"Description Not Found: Error ^(--)^",
+            services_Type:"Type Not Found: Error ^(--)^"
+          })
+      }
+    },
+    async fetchExperience(context) {
+      // Experience
+      try {
+        const { Experience } = await (await axios.get(portURL)).data
+        context.commit('setExperience', Experience);
+        console.log(Experience);
       } catch (e) {
           Swal.fire ({
             services_Name:"Name Not Found: Error ^(--)^",

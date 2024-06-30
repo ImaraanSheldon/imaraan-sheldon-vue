@@ -1,9 +1,9 @@
 <template>
     <div class="container">
       <div class="row pb-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-lg-8" v-if="Work_Head">
-          <h6 class="text-brand">{{ Work_Head.work_Name }}</h6>
-          <h1>{{ Work_Head.work_Sub }}</h1>
+        <div class="col-lg-8">
+          <h6 class="text-brand">Work</h6>
+          <h1>My Recent Projects</h1>
         </div>
       </div>
   
@@ -36,11 +36,8 @@
   import { computed, onMounted } from 'vue'
   import { useStore } from 'vuex'
   const store = useStore()
-  const Work_Head = computed(() => store.state.Work_Head)
   const Work = computed(() => store.state.Work)
   onMounted(() => {
-    store.dispatch('fetchWork_Head')
-    console.log(Work_Head);
     store.dispatch('fetchWork')
     console.log(Work);
   
