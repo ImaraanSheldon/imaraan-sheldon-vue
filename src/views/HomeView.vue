@@ -12,7 +12,9 @@
     <section class="full-height px-lg-5" id="about">
       <AboutComp/>
     </section>
-    <section class="full-height px-lg-5" id="skills"></section>
+    <section class="full-height px-lg-5" id="skills">
+      <!-- <SkillsComp/> -->
+    </section>
     <section class="full-height px-lg-5" id="testimonials"></section>
     <section class="full-height px-lg-5" id="contact"></section>
   </div>
@@ -23,6 +25,7 @@ import landingComp from "@/components/landingComp.vue";
 import ServicesComp from "@/components/ServicesComp.vue";
 import WorkComp from "@/components/WorkComp.vue";
 import AboutComp from "@/components/AboutComp.vue";
+// import SkillsComp from "@/components/SkillsComp.vue";
 
 export default {
   name: 'HomeView',
@@ -31,18 +34,7 @@ export default {
     ServicesComp,
     WorkComp,
     AboutComp
-  },
-  computed:{
-    Home() {
-      return this.$store.state.Home
-    },
-    Sections(){
-      return this.$store.state.Sections
-    }
-  },
-  mounted(){
-    this.$store.dispatch('fetchHome'),
-    this.$store.dispatch('fetchSections')
+    // SkillsComp
   }
 }
 </script>

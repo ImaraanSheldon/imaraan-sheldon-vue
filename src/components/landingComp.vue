@@ -20,7 +20,6 @@ const store = useStore()
 const Home = computed( ()=> store.state.Home)
 onMounted(()=>{
     store.dispatch('fetchHome')
-    console.log(Home);
 
 })
 </script>
