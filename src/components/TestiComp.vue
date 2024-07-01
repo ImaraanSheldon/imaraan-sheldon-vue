@@ -2,14 +2,14 @@
     <div class="container">
       <div class="row pb-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-lg-8">
-          <h6 class="text-brand">Skills</h6>
-          <h1>My Skills</h1>
+          <h6 class="text-brand">Testimonials</h6>
+          <h1>What People Think of Me</h1>
         </div>
       </div>
   
-      <div class="row gy-2" v-if="Skills?.length">
+      <div class="row gy-2" v-if="Testimonials?.length">
   
-        <div class="col-md-4" v-for="x in Skills" :key="x.id" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="col-md-4" v-for="x in Testimonials" :key="x.id" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <div class="d-flex justify-content-start align-items-baseline">
                 <div class="iconbox mb-4 rounded-4 me-2">
                   <i :class="x.logo"></i>
@@ -28,10 +28,10 @@
   import { computed, onMounted } from 'vue'
   import { useStore } from 'vuex'
   const store = useStore()
-  const Skills = computed(() => store.state.Skills)
+  const Testimonials = computed(() => store.state.Testimonials)
   onMounted(() => {
-    store.dispatch('fetchSkills')
-    console.log(Skills);
+    store.dispatch('fetchTestimonials')
+    console.log(Testimonials);
   
   })
   </script>
