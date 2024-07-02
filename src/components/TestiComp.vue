@@ -15,8 +15,8 @@
           </div>
           <div class="card-body">
             <p class="card-text">{{ x.name }}</p>
-            <h5 class="card-title">{{ x.name }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ x.name }}</h6>
+            <h5 class="card-title">{{ x.relationship }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ x.testimonial }}</h6>
           </div>
         </div>
       </div>
@@ -82,7 +82,8 @@ a:hover {
 /* Testimonial card styling */
 .testimonial-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border:4px solid var(--Color-Background2-Juniper)
+  border:4px solid var(--Color-Background2-Juniper);
+  background-color:var(--Color-Background2-Juniper);
 }
 .testimonial-card:hover {
   transform: translateY(-10px);

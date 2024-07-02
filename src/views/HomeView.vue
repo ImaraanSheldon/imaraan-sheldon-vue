@@ -18,7 +18,9 @@
     <section class="full-height px-lg-5" id="testimonials">
       <TestiComp/>
     </section>
-    <section class="full-height px-lg-5" id="contact"></section>
+    <section class="full-height px-lg-5" id="contact">
+      <ContactComp/>
+    </section>
   </div>
 </template>
 
@@ -29,6 +31,7 @@ import WorkComp from "@/components/WorkComp.vue";
 import AboutComp from "@/components/AboutComp.vue";
 import SkillsComp from "@/components/SkillsComp.vue";
 import TestiComp from "@/components/TestiComp.vue";
+import ContactComp from "@/components/ContactComp.vue"
 
 export default {
   name: 'HomeView',
@@ -38,7 +41,8 @@ export default {
     WorkComp,
     AboutComp,
     SkillsComp,
-    TestiComp
+    TestiComp,
+    ContactComp
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <footer class="container-fluid">
+  <footer class="container">
     <div class="row">
-      <p class="lead">
+      <p class="lead name text-center">
         Imaraan Sheldons' Portfolio &copy;
         <span>{{ cYear }}</span>
       </p>
@@ -18,3 +18,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.container{
+  background-color:var(--Color-Accent-Pinot);
+  margin-left:240px;
+}
+</style>

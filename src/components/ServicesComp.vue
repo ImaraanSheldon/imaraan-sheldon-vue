@@ -10,7 +10,7 @@
     <div class="row gy-4" v-if="Services?.length">
 
       <div class="col-md-4" v-for="x in Services" :key="x.id" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <div class="service p-4 bg-base rounded-4 shadow-effect">
+        <div class="service h-100 p-4 bg-base rounded-4 shadow-effect">
           <div class="iconbox mb-4 rounded-4">
             <i class="p-3 las la-feather"></i>
           </div>
@@ -75,5 +75,12 @@ h1,h2,h3,h4,h5,h6{
   a:hover{
     color: var(--Color-Header-Blossom);
   }
+  /* @media (min-width: 768px){
+    .min{
+      min-height: auto; 
+      min-height: 500px
+    }
+
+  } */
 
 </style>

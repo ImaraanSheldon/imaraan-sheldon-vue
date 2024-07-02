@@ -10,7 +10,7 @@
       <div class="row gy-4" v-if="Work?.length">
   
         <div class="col-md-6 mb-4" v-for="x in Work" :key="x.id" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-          <div class="custom-card rounded-4 p-2 bg-base shadow-effect">
+          <div class="custom-card h-100 rounded-4 p-2 bg-base shadow-effect">
             <div class="custom-card-image rounded-4">
               <img :src="x.img" alt="Ikumi<3">
             </div>
