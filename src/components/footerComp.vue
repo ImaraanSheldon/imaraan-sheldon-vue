@@ -20,8 +20,14 @@ export default {
 </script>
 
 <style scoped>
-.container{
+ @media (min-width: 768px){
+  .container{
   background-color:var(--Color-Accent-Pinot);
   margin-left:240px;
+}
+
+  }
+.container{
+  background-color:var(--Color-Accent-Pinot);
 }
 </style>

@@ -14,7 +14,7 @@
             <div class="custom-card-image rounded-4">
               <img :src="x.img" alt="Ikumi<3">
             </div>
-            <div class="custom-card-content">
+            <div class="custom-card-content internal-screaming">
                 <h4 class="my-3">{{ x.title }}</h4>
                 <p>{{ x.description }}</p>
                 <div class="d-flex justify-content-evenly">
@@ -45,6 +45,14 @@
   </script>
   
   <style scoped>
+  .internal-screaming{
+    display:flex;
+    flex-direction:column;
+    height:40%;
+  }
+  .internal-screaming > :last-child {
+  margin-top: auto; /* Pushes the last child (the link) to the bottom */
+}
   /* Base styling on Header tags */
   h1,h2,h3,h4,h5,h6{
       color: var(--Color-Header-Blossom);

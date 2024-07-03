@@ -42,6 +42,15 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.service {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service > :last-child {
+  margin-top: auto; /* Pushes the last child (the link) to the bottom */
+}
 /* Base styling on Header tags */
 h1,h2,h3,h4,h5,h6{
     color: var(--Color-Header-Blossom);
