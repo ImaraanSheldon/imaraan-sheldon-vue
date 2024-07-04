@@ -47,3 +47,8 @@
 
 <script>
 </script>
+<style scoped>
+nav{
+  max-width:100vw;
+}
+</style>

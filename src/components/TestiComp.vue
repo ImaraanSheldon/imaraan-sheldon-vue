@@ -21,9 +21,9 @@
         </div>
       </div>
     </div>
-    <div v-else>
-      <p>Loading...</p>
-    </div>
+    <div v-else class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
   </div>
 </template>
 

@@ -31,6 +31,9 @@
                     </div>
                 </div>
         </div>
+        <div v-else class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
 
         <!--<div class="row pb-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-lg-8" v-if="About">

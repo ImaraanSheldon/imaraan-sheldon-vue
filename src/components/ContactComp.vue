@@ -37,6 +37,35 @@
 
        </div>
 
+       <!-- Icons -->
+        <div class="row mt-5">
+            <div class="col-md-4"></div>
+            <div class= "col-md-8 d-flex flex-column align-items-end gap-3">
+                <div class="d-flex align-items-baseline">
+                    <h4 class="p-2">(+27)081 319 8477</h4>
+                    <div class="iconbox mb-4 rounded-4">
+                        <i class="las la-phone-volume"></i>
+                    </div>
+                    
+                </div>
+                <div class="d-flex align-items-baseline">
+                    <h4 class="p-2">Cape Town, Western Cape</h4>
+                    <div class="iconbox mb-4 rounded-4">
+                        <i class="las la-map-marker"></i>
+                    </div>
+                    
+                </div>
+                <div class="d-flex align-items-baseline">
+                    <h4 class="p-2">imaraansheldonis2302003@gmail.com</h4>
+                    <div class="iconbox mb-4 rounded-4">
+                        <i class="las la-envelope"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div class="col-md-2"></div> -->
+
+        </div>
      </div>
    </div>
    </div>
@@ -85,5 +114,9 @@
     a:hover{
       color: var(--Color-Header-Blossom);
     }
-  
+
+    .las{
+        font-size:2.5rem;
+        color: white;
+    }
   </style>
