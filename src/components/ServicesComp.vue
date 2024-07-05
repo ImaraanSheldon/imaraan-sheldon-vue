@@ -16,7 +16,7 @@
           </div>
           <h3 class="mb-4">{{ x.services_Name }}</h3>
           <p>{{ x.services_Description }}</p>
-          <a href="#About" class="link-custom">{{ x.services_Type }}</a>
+          <a href="#work" class="link-custom">{{ x.services_Type }}</a>
         </div>
       </div>
     </div>
