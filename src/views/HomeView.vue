@@ -12,9 +12,9 @@
     <section class="full-height px-lg-5" id="work">
       <WorkComp/>
     </section>
-    <section class="full-height px-lg-5" id="skills">
+    <!-- <section class="full-height px-lg-5" id="skills">
       <SkillsComp/>
-    </section>
+    </section> -->
     <!-- <section class="full-height px-lg-5" id="testimonials">
       <TestiComp/>
     </section> -->
@@ -29,7 +29,7 @@ import landingComp from "@/components/landingComp.vue";
 import ServicesComp from "@/components/ServicesComp.vue";
 import WorkComp from "@/components/WorkComp.vue";
 import AboutComp from "@/components/AboutComp.vue";
-import SkillsComp from "@/components/SkillsComp.vue";
+// import SkillsComp from "@/components/SkillsComp.vue";
 // import TestiComp from "@/components/TestiComp.vue";
 import ContactComp from "@/components/ContactComp.vue"
 
@@ -40,7 +40,7 @@ export default {
     ServicesComp,
     WorkComp,
     AboutComp,
-    SkillsComp,
+    // SkillsComp,
     // TestiComp,
     ContactComp
   }

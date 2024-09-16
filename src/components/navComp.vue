@@ -30,9 +30,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#work">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#skills">Irrelevent</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" href="#testimonials">Testimonials</a>
             </li> -->
