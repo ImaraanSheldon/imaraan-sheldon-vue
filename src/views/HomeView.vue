@@ -6,18 +6,18 @@
     <section class="full-height px-lg-5" id="services">
       <ServicesComp/>
     </section>
-    <section class="full-height px-lg-5" id="work">
-      <WorkComp/>
-    </section>
     <section class="full-height px-lg-5" id="about">
       <AboutComp/>
+    </section>
+    <section class="full-height px-lg-5" id="work">
+      <WorkComp/>
     </section>
     <section class="full-height px-lg-5" id="skills">
       <SkillsComp/>
     </section>
-    <section class="full-height px-lg-5" id="testimonials">
+    <!-- <section class="full-height px-lg-5" id="testimonials">
       <TestiComp/>
-    </section>
+    </section> -->
     <section class="full-height px-lg-5" id="contact">
       <ContactComp/>
     </section>
@@ -30,7 +30,7 @@ import ServicesComp from "@/components/ServicesComp.vue";
 import WorkComp from "@/components/WorkComp.vue";
 import AboutComp from "@/components/AboutComp.vue";
 import SkillsComp from "@/components/SkillsComp.vue";
-import TestiComp from "@/components/TestiComp.vue";
+// import TestiComp from "@/components/TestiComp.vue";
 import ContactComp from "@/components/ContactComp.vue"
 
 export default {
@@ -41,7 +41,7 @@ export default {
     WorkComp,
     AboutComp,
     SkillsComp,
-    TestiComp,
+    // TestiComp,
     ContactComp
   }
 }

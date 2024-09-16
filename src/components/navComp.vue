@@ -22,20 +22,20 @@
               <a class="nav-link active" aria-current="page" href="#landing">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#services">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
+              <a class="nav-link" href="#about">Education & Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#work">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#skills">Irrelevent</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#testimonials">Testimonials</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact Me</a>
             </li>
