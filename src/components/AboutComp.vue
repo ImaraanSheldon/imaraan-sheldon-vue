@@ -2,8 +2,8 @@
     <div class="">
         <div class="row pb-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-lg-8">
-                <h6 class="text-brand">ABOUT</h6>
-                <h1>My Education & Experience</h1>
+                <h6 class="text-brand">Education & Experience</h6>
+                <h1>History</h1>
             </div>
         </div>
 

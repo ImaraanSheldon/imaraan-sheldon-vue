@@ -6,7 +6,8 @@
         <h1>{{ Services_Head.section_Sub }}</h1>
       </div>
     </div>
-
+    
+    <div class="d-flex justify-content-center text-brand text-start lead mb-5">Imraan Sheldon, originally from Cape Town, is a dedicated full-stack developer with a deep passion for programming. With a solid foundation in both front-end and back-end technologies, Imraan combines his technical expertise with a creative approach to problem-solving. His love for coding drives him to continually explore new tools and techniques, aiming to craft innovative solutions and build dynamic web applications.</div>
     <div class="row gy-4" v-if="Services?.length">
 
       <div class="col-md-4" v-for="x in Services" :key="x.id" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
@@ -16,11 +17,34 @@
           </div>
           <h3 class="mb-4">{{ x.services_Name }}</h3>
           <p>{{ x.services_Description }}</p>
-          <a href="#work" class="link-custom">{{ x.services_Type }}</a>
+          <!-- <a href="#work" class="link-custom">{{ x.services_Type }}</a> -->
         </div>
       </div>
     </div>
     <div v-else class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+
+
+        <div class="row py-4 text-center text-md-start" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-lg-8">
+          <h6 class="text-brand">Skills</h6>
+          <h1>My Skills</h1>
+        </div>
+      </div>
+  
+      <div class="row gy-2" v-if="Skills?.length">
+  
+        <div class="col-md-4" v-for="x in Skills" :key="x.id" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="d-flex justify-content-start align-items-baseline">
+                <div class="iconbox mb-4 rounded-4 me-2">
+                  <i :class="x.logo"></i>
+                </div>
+                <h3 class="mb-4">{{ x.name }}</h3>
+              </div>
+        </div>
+      </div>
+      <div v-else class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
       </div>
@@ -32,11 +56,13 @@ import { useStore } from 'vuex'
 const store = useStore()
 const Services_Head = computed(() => store.state.Services_Head)
 const Services = computed(() => store.state.Services)
+const Skills = computed(() => store.state.Skills)
 onMounted(() => {
   store.dispatch('fetchServices_Head')
   console.log(Services_Head);
   store.dispatch('fetchServices')
   console.log(Services);
+  store.dispatch('fetchSkills')
 
 })
 </script>
