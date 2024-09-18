@@ -9,7 +9,7 @@
 
         <div class="row gy-4 mx-1 align-items-baseline" v-if="Education?.length && Experience?.length">
 
-            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-lg-6 col-xl-12 d-flex flex-column justify-content-center align-items-center">
                 <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Education</h4>
                 <div class="rounded-4 bg-base shadow-effect mb-4 p-4" v-for="x in Education" :key="x.id" data-aos="fade-up" data-aos-duration="1000"
                     data-aos-delay="300">
